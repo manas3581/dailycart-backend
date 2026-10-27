@@ -6,10 +6,13 @@ dist/
 build/
 *.tsbuildinfo
 
-# Environment / secrets
+# Environment / secrets (DATABASE_URL, JWT secrets, etc.)
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
 
 # Logs
 logs/
@@ -33,7 +36,6 @@ coverage/
 .nyc_output/
 
 # Misc
-*.pem
 .cache/
 tmp/
 temp/

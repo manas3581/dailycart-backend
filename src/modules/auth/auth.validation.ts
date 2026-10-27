@@ -10,7 +10,7 @@ export const registerSchema = z.object({
     lastName: z
         .string()
         .trim()
-        .min(2, "Last name must be at least 2 characters")Validate website URL input in OrganisationDetails component and display error message for invalid URLs.
+        .min(2, "Last name must be at least 2 characters")
         .max(50, "Last name must not exceed 50 characters"),
 
     email: z
